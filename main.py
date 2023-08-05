@@ -9,7 +9,7 @@ from Property import Property
 import json
 
 app = FastAPI()
-classifier_RFR = pk.load(open("model_RFR.pkl", "rb"))
+classifier_RFR = pk.load(open(wget https://drive.google.com/file/d/1HChzz5F7xRsnZMmi1NQt5MgsGZ2iSIxJ/view?usp=sharing , "rb"))
 
 # 3. Expose the prediction functionality, make a prediction from the passed
 
