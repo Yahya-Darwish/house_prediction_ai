@@ -3,7 +3,7 @@
 from fastapi import FastAPI
 import numpy as np
 import pickle as pk
-import wget
+#import wget
 import pandas as pd
 from Property import Property
 # 2. Create the app object
