@@ -5,10 +5,20 @@ import numpy as np
 import pickle as pk
 import pandas as pd
 from Property import Property
+from fastapi.middleware.cors import CORSMiddleware
+
 # 2. Create the app object
+
 import json
 
 app = FastAPI()
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 classifier_RFR = pk.load(open("model_RFR.pkl" , "rb"))
 
 # 3. Expose the prediction functionality, make a prediction from the passed
